@@ -1,13 +1,13 @@
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
-import { devNull } from 'node:os';
 const exec = promisify(execFile);
 export const MAX_INPUT_BYTES = 32 * 1024 * 1024;
 
 /** Git variables cannot silently redirect --repo, inject config, or enable hooks. */
 export function gitEnvironment(environment = process.env) {
   const env = Object.fromEntries(Object.entries(environment).filter(([key]) => !/^GIT_/i.test(key)));
-  return { ...env, GIT_CONFIG_NOSYSTEM: '1', GIT_CONFIG_GLOBAL: devNull,
+  // Git for Windows understands /dev/null; Node's Win32 device path is not a Git config path.
+  return { ...env, GIT_CONFIG_NOSYSTEM: '1', GIT_CONFIG_GLOBAL: '/dev/null',
     GIT_OPTIONAL_LOCKS: '0', GIT_TERMINAL_PROMPT: '0', GIT_NO_LAZY_FETCH: '1' };
 }
 
