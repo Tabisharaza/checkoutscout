@@ -1,0 +1,19 @@
+{
+  "name": "checkoutscout",
+  "version": "0.1.0",
+  "description": "Catch new cross-platform Git path hazards without blocking on existing portability debt.",
+  "type": "module",
+  "bin": { "checkoutscout": "bin/checkoutscout.js" },
+  "exports": "./src/index.js",
+  "files": ["bin", "src", "README.md", "LICENSE", "THIRD_PARTY.md"],
+  "engines": { "node": ">=22" },
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/Tabisharaza/checkoutscout.git" },
+  "scripts": {
+    "test": "node --test --test-concurrency=1",
+    "check": "node scripts/check.js",
+    "build": "node scripts/build.js",
+    "demo": "node scripts/demo.js",
+    "verify": "npm run check && npm test && npm run build"
+  }
+}

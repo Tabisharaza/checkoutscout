@@ -1,0 +1,35 @@
+CheckoutScout · portability review
+11 paths · 4 new · 1 accepted · 1 resolved/changed
+
+NEW ERROR normalization-collision
+  "assets/café.svg": Distinct file or directory spellings have the same Unicode NFC normalization.
+    "assets/café.svg"
+    "assets/café.svg"
+  Next: Normalize names consistently and rename colliding entries so their NFC forms remain distinct.
+
+NEW ERROR case-collision
+  "docs": Distinct file or directory spellings match after ASCII A–Z are lowercased.
+    "Docs/getting-started.md"
+    "docs/api.md"
+  Next: Choose one directory spelling and give colliding files distinct names. Use an intermediate name for case-only Git renames.
+
+EXISTING ERROR windows-reserved-name
+  "legacy/CON.txt": Component uses a Windows-reserved device name, with or without an extension.
+    "legacy/CON.txt"
+  Next: Use a name other than a Windows device name, even when the component has an extension or names a directory.
+
+NEW ERROR windows-forbidden-character
+  "reports/quarter?.csv": Component contains Windows-reserved characters: U+003F.
+    "reports/quarter?.csv"
+  Next: Rename the component without Windows-reserved filename characters or ASCII control characters.
+
+NEW ERROR case-collision
+  "src/button.tsx": Distinct file or directory spellings match after ASCII A–Z are lowercased.
+    "src/Button.tsx"
+    "src/button.tsx"
+  Next: Choose one directory spelling and give colliding files distinct names. Use an intermediate name for case-only Git renames.
+
+Baseline fingerprints no longer present (fixed or changed groups):
+  case-collision "old/a.md"
+
+Names only; no source files read or renamed. Review paths before sharing this report.

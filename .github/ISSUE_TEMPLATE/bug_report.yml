@@ -1,0 +1,23 @@
+name: Report a reproducible bug
+description: A small synthetic case that behaves unexpectedly
+title: "Bug: "
+body:
+  - type: textarea
+    id: example
+    attributes:
+      label: Synthetic paths and command
+      description: No private paths, source code, or credentials. Include a minimal JSON path array.
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: input
+    id: runtime
+    attributes:
+      label: Node version, OS, and CheckoutScout commit
+    validations:
+      required: true

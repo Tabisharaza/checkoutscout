@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "tool": "CheckoutScout",
+  "issues": [
+    {
+      "id": "6f82c1daf28d68ef7211c763465fa0bc22287014e8f7af44bde1eab791127e61",
+      "ruleId": "windows-reserved-name",
+      "subject": "legacy/CON.txt",
+      "paths": [
+        "legacy/CON.txt"
+      ]
+    },
+    {
+      "id": "302fd9036db80b8a2b6bc0311b42b196fdb61e9667d0eeab80392a5c6bf39fe5",
+      "ruleId": "case-collision",
+      "subject": "old/a.md",
+      "paths": [
+        "old/A.md",
+        "old/a.md"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "tool": {
+    "name": "CheckoutScout",
+    "version": "0.1.0"
+  },
+  "summary": {
+    "paths": 11,
+    "errors": 5,
+    "warnings": 0,
+    "new": 4,
+    "existing": 1,
+    "resolved": 1
+  },
+  "issues": [
+    {
+      "id": "50b57110bb1827d6ef155d3f14fc6792a4a18187eefa1c4d70397cfdfd33fb00",
+      "ruleId": "normalization-collision",
+      "severity": "error",
+      "subject": "assets/café.svg",
+      "paths": [
+        "assets/café.svg",
+        "assets/café.svg"
+      ],
+      "message": "Distinct file or directory spellings have the same Unicode NFC normalization.",
+      "help": "Normalize names consistently and rename colliding entries so their NFC forms remain distinct.",
+      "status": "new"
+    },
+    {
+      "id": "bc45035064745ff8b70ee299fe94ce73a023b5430780d4d36c9366853699c9ce",
+      "ruleId": "case-collision",
+      "severity": "error",
+      "subject": "docs",
+      "paths": [
+        "Docs/getting-started.md",
+        "docs/api.md"
+      ],
+      "message": "Distinct file or directory spellings match after ASCII A–Z are lowercased.",
+      "help": "Choose one directory spelling and give colliding files distinct names. Use an intermediate name for case-only Git renames.",
+      "status": "new"
+    },
+    {
+      "id": "6f82c1daf28d68ef7211c763465fa0bc22287014e8f7af44bde1eab791127e61",
+      "ruleId": "windows-reserved-name",
+      "severity": "error",
+      "subject": "legacy/CON.txt",
+      "paths": [
+        "legacy/CON.txt"
+      ],
+      "message": "Component uses a Windows-reserved device name, with or without an extension.",
+      "help": "Use a name other than a Windows device name, even when the component has an extension or names a directory.",
+      "status": "existing"
+    },
+    {
+      "id": "b5c072a8ef2f0c720abe36a762aa17f3c65c0a22ee0fde482b308b8bd2e38642",
+      "ruleId": "windows-forbidden-character",
+      "severity": "error",
+      "subject": "reports/quarter?.csv",
+      "paths": [
+        "reports/quarter?.csv"
+      ],
+      "message": "Component contains Windows-reserved characters: U+003F.",
+      "help": "Rename the component without Windows-reserved filename characters or ASCII control characters.",
+      "status": "new"
+    },
+    {
+      "id": "7a6dc2eda0f69c9725d02a631baf55b6df1ea9b827bf0cb0f3e698b66c32b50d",
+      "ruleId": "case-collision",
+      "severity": "error",
+      "subject": "src/button.tsx",
+      "paths": [
+        "src/Button.tsx",
+        "src/button.tsx"
+      ],
+      "message": "Distinct file or directory spellings match after ASCII A–Z are lowercased.",
+      "help": "Choose one directory spelling and give colliding files distinct names. Use an intermediate name for case-only Git renames.",
+      "status": "new"
+    }
+  ],
+  "resolved": [
+    {
+      "id": "302fd9036db80b8a2b6bc0311b42b196fdb61e9667d0eeab80392a5c6bf39fe5",
+      "ruleId": "case-collision",
+      "subject": "old/a.md",
+      "paths": [
+        "old/A.md",
+        "old/a.md"
+      ]
+    }
+  ]
+}

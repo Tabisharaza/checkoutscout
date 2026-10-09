@@ -1,0 +1,15 @@
+name: Propose an improvement
+description: Explain the workflow and a bounded change
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What real task is difficult today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Smallest useful change and alternatives considered
+    validations:
+      required: true

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 430" role="img" aria-labelledby="title desc">
+<title id="title">CheckoutScout: catch new checkout hazards</title><desc id="desc">Synthetic workflow illustration: review a baseline, scan Git path names, block new hazards while showing accepted debt.</desc>
+<rect width="1120" height="430" rx="20" fill="#142b35"/>
+<g font-family="system-ui,Segoe UI,sans-serif">
+<text x="54" y="62" fill="#a6d8bc" font-size="14" letter-spacing="3">CHECKOUTSCOUT / PORTABILITY, INCREMENTALLY</text>
+<text x="54" y="129" fill="#f3f5ee" font-size="45" font-weight="700" letter-spacing="-1.5">A safer landing for every checkout.</text>
+<text x="54" y="166" fill="#b7c9c8" font-size="18">Review what exists. Catch what changes. Keep every finding visible.</text>
+<rect x="54" y="214" width="286" height="155" rx="14" fill="#243e45" stroke="#47635d"/>
+<text x="77" y="250" fill="#b4ddc5" font-size="12" letter-spacing="1.4">01 / REVIEWED BASELINE</text>
+<text x="77" y="286" fill="#f3f5ee" font-size="24" font-weight="650">Accept known debt</text>
+<text x="77" y="320" fill="#c2d4d0" font-size="14">A deliberate, reviewable snapshot.</text>
+<text x="77" y="344" fill="#c2d4d0" font-size="14">Never refreshed automatically.</text>
+<path d="M354 292h26m-8-8 8 8-8 8" fill="none" stroke="#b4ddc5" stroke-width="2"/>
+<rect x="399" y="214" width="286" height="155" rx="14" fill="#243e45" stroke="#47635d"/>
+<text x="422" y="250" fill="#b4ddc5" font-size="12" letter-spacing="1.4">02 / GIT INDEX AUDIT</text>
+<text x="422" y="286" fill="#f3f5ee" font-size="24" font-weight="650">Inspect names only</text>
+<text x="422" y="320" fill="#c2d4d0" font-size="14">Case, Unicode, Windows names.</text>
+<text x="422" y="344" fill="#c2d4d0" font-size="14">No source reads or renames.</text>
+<path d="M700 292h26m-8-8 8 8-8 8" fill="none" stroke="#b4ddc5" stroke-width="2"/>
+<rect x="744" y="214" width="322" height="155" rx="14" fill="#d7eddf"/>
+<text x="767" y="250" fill="#176c55" font-size="12" letter-spacing="1.4">03 / REGRESSION GATE</text>
+<text x="767" y="286" fill="#142b35" font-size="24" font-weight="650">Block new hazards</text>
+<text x="767" y="320" fill="#39544b" font-size="14">Stable fingerprints. Explicit status.</text>
+<text x="767" y="344" fill="#39544b" font-size="14">Text, JSON, and offline HTML.</text>
+<text x="54" y="405" fill="#91aaa7" font-size="12">Original workflow illustration · synthetic examples in the repository · no performance or platform guarantee implied</text>
+</g></svg>

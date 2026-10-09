@@ -1,0 +1,13 @@
+[
+  "README.md",
+  "package.json",
+  "src/Button.tsx",
+  "src/button.tsx",
+  "Docs/getting-started.md",
+  "docs/api.md",
+  "assets/café.svg",
+  "assets/café.svg",
+  "legacy/CON.txt",
+  "reports/quarter?.csv",
+  "scripts/build.js"
+]
